@@ -1,1 +1,1 @@
-*Singolo
+#Singolo
