@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body, p, main ,footer,h1, h2 {
+    margin: 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 40px 0 40px;
+}
+
+header, main {
+    display: flex; 
+    background-color: #f06c64;
+}
+
+header {
+    height: 198px;
+}
+
+main {
+    height: 450px;
+}
+
+body {
+    height: 648px;
+    font-family: 'Lato', sans-serif;
+    cursor: default;
+}
+
+.logo {
+    color: #f0d8d9;
+    font-size: 1.875rem;
+    letter-spacing: 0.03rem;
+    font-weight: 900;
+    margin-top: 59px;
+    word-spacing: -0.03rem;
+}
+
+.info {
+    color: #f0d8d9;
+    font-size: 1.125rem;
+    margin-top: 19px;
+    text-align: justify;
+    letter-spacing: -0.03rem;
+    word-spacing: 0.09em;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.main {
+    display: inline-flex;
+    margin-top: -25px;
+}
+
+.form {
+    width: 619px;
+    height: 364px;
+    margin-left: 40px;
+}
+
+input::-moz-placeholder {
+    color: #ee8182;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+input::-webkit-input-placeholder {
+    color: #ee8182;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.form ul{
+    list-style-type:none;
+    list-style-position:outside;
+    margin: 36px 0 0 -48px;
+    padding:0px;
+}
+
+.form li {
+    padding: 8px;
+}
+
+.form input {
+    height: 38px;
+    width: 591px;
+    padding: 0px 14px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    box-shadow: none;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.describe input {
+    height: 35px;
+    padding-bottom: 168px;
+}
+
+.text-color {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.form input:focus {
+  background-color:#FFDAB9;
+}
+
+:focus {
+    outline: none;
+}
+
+.contact {
+    color: #f0d8d9;
+    margin: 41px 0 0 -20px;
+}
+
+.cinfo {
+    font-size: 1.125rem;
+    font-weight: 900;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.03rem;
+}
+
+.contact > p {
+    width: 300px;
+    margin-top: 9px;
+    letter-spacing: 0.03rem;
+    text-align: justify;
+}
+
+.els, .contact > p {
+    font-size: 0.7rem;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.els {
+    margin-top: 0px;
+}
+
+.els > img {
+    position: absolute;
+    
+}
+
+.location{
+    margin: 8px 0 0 4px;
+}
+
+.loc {
+    margin: -23px 0 0 24px;
+    letter-spacing: 0.03rem;
+}
+
+.num {
+    margin-left: 2px;
+}
+
+.mail {
+    margin: 2px 0 0 1px;
+}
+
+.mailadress {
+    margin-top: -2px;
+}
+
+a {
+    text-decoration: none;
+    color: #f0d8d9;
+    margin-left: 9px;
+    letter-spacing: 0.03rem;
+}
+
+
+
+footer {
+    align-items: center;
+    display: flex;
+    background-color: #2d303a;
+    height: 76px;
+    border-top: 6px solid #ea676b;
+}
+
+.footer {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.cr {
+    color: #666d89;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 2px;
+    font-size: small;
+    letter-spacing: -0.04rem;
+}
+
+.social {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    width: 154px;
+}
+
+.fb:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.gg:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.ln:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.tw:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.ellipse {
+    position: relative;
+}
+
+.google, .facebook, .linkedin, .twitter {
+    position: absolute;
+}
+
+.google {
+    margin: 10px 0 0 -24px;
+}
+
+.facebook {
+    margin: 10px 0 0 -21px;
+}
+
+.linkedin {
+    margin: 10px 0 0 -24px;
+}
+
+.twitter {
+    margin: 11px 0 0 -24px;
+}
