@@ -18,9 +18,12 @@ body {
 header {
     display: flex;
     color: white;
-    background-color: #2d303a;
+    background-color: rgba(45, 48, 58, 0.753);
     height: 89px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 .header {
@@ -71,10 +74,10 @@ header {
     display: flex;
     align-items: center;
     height: 594px;
-    background-color: #f06c64;
     
+    background-color: #f06c64;
     border-top: 6px solid #323746;
-    border-bottom: 6px solid #ea676b;
+    border-bottom: 5px solid #ea676b;
 }
 
 .main {
@@ -85,6 +88,8 @@ header {
 
 .phone { 
     position: relative;
+    margin-left: 18px;
+    
 }
 
 .ver {
@@ -99,6 +104,20 @@ header {
 
 .phone > img { 
     position: absolute;
+}
+
+.mobiles {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: relative;
+    margin: 0 auto;
+  
+
+  width: 797px;
+  height: 600px;
+  overflow: hidden;
 }
 
 /*VERTICAL PHONE*/
@@ -234,9 +253,74 @@ header {
     margin-top: -0.03rem;
 }
 
-.chev :hover {
-    filter: opacity(75%);
+.chev {
+    z-index: 2;
+    margin-top: 13px;
+    filter: opacity(70%);
 }
+
+.chev:hover {
+    filter: opacity(100%);
+}
+
+.slide {
+    opacity: 0;
+
+    transition: 1.2s;
+    animation: show 1s 0.5s;
+    -webkit-animation: 0.4s ease-in-out;
+    animation: 0.4s ease-in-out;
+}
+
+.active,
+.next {
+  opacity: 1;
+}
+}
+
+
+.next {
+  position: absolute;
+}
+
+
+.slide_2{
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -40px;
+}
+
+/****/
+
+
+
+@keyframes show{
+    0%{
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@keyframes right {
+    from {
+        margin-left: -100vw;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+@keyframes left {
+    from {
+        margin-left: 100vw;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+/****/
+
 
 .footer-one {
     display: flex;
@@ -272,7 +356,7 @@ header {
     margin-left: 14px;
 }
 
-.bulb, .phone {
+.bulb, .iphone {
     margin-left: 18px;
 }
 
@@ -822,3 +906,29 @@ a {
     margin-top: 2px;
     width: 154px;
 }
+
+/********************
+*********************
+*********************/
+
+.to-left {
+    -webkit-animation-name: left;
+            animation-name: left;
+  }
+  
+  .from-right {
+    -webkit-animation-name: right;
+            animation-name: right;
+  }
+  
+  .to-right {
+    -webkit-animation-name: right;
+            animation-name: right;
+    animation-direction: reverse;
+  }
+  
+  .from-left {
+    -webkit-animation-name: left;
+            animation-name: left;
+    animation-direction: reverse;
+  }
